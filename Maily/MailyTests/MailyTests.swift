@@ -2,7 +2,7 @@
 //  MailyTests.swift
 //  MailyTests
 //
-//  Created by Ivan Smetanin on 05/10/2018.
+//  Created by Ivan Smetanin on 07/10/2018.
 //  Copyright © 2018 Ivan Smetanin. All rights reserved.
 //
 

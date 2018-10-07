@@ -7,105 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BDEA3DA2167F7EB00A74A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEA3D92167F7EB00A74A6D /* AppDelegate.swift */; };
-		8BDEA3DC2167F7EB00A74A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEA3DB2167F7EB00A74A6D /* ViewController.swift */; };
-		8BDEA3DF2167F7EB00A74A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDEA3DD2167F7EB00A74A6D /* Main.storyboard */; };
-		8BDEA3E12167F7EB00A74A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BDEA3E02167F7EB00A74A6D /* Assets.xcassets */; };
-		8BDEA3E42167F7EB00A74A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDEA3E22167F7EB00A74A6D /* LaunchScreen.storyboard */; };
-		8BDEA3EF2167F7EC00A74A6D /* MailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEA3EE2167F7EC00A74A6D /* MailyTests.swift */; };
+		8B8096092169E8CE00E9FD39 /* Maily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8095FF2169E8CE00E9FD39 /* Maily.framework */; };
+		8B80960E2169E8CE00E9FD39 /* MailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80960D2169E8CE00E9FD39 /* MailyTests.swift */; };
+		8B8096102169E8CE00E9FD39 /* Maily.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B8096022169E8CE00E9FD39 /* Maily.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B80961A2169E99700E9FD39 /* Maily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8096192169E99700E9FD39 /* Maily.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8BDEA3EB2167F7EC00A74A6D /* PBXContainerItemProxy */ = {
+		8B80960A2169E8CE00E9FD39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8BDEA3CE2167F7EB00A74A6D /* Project object */;
+			containerPortal = 8B8095F62169E8CE00E9FD39 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8BDEA3D52167F7EB00A74A6D;
+			remoteGlobalIDString = 8B8095FE2169E8CE00E9FD39;
 			remoteInfo = Maily;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BDEA3D62167F7EB00A74A6D /* Maily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maily.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BDEA3D92167F7EB00A74A6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BDEA3DB2167F7EB00A74A6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8BDEA3DE2167F7EB00A74A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8BDEA3E02167F7EB00A74A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8BDEA3E32167F7EB00A74A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8BDEA3E52167F7EB00A74A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BDEA3EA2167F7EC00A74A6D /* MailyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BDEA3EE2167F7EC00A74A6D /* MailyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailyTests.swift; sourceTree = "<group>"; };
-		8BDEA3F02167F7EC00A74A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8095FF2169E8CE00E9FD39 /* Maily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8096022169E8CE00E9FD39 /* Maily.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maily.h; sourceTree = "<group>"; };
+		8B8096032169E8CE00E9FD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8096082169E8CE00E9FD39 /* MailyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B80960D2169E8CE00E9FD39 /* MailyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailyTests.swift; sourceTree = "<group>"; };
+		8B80960F2169E8CE00E9FD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8096192169E99700E9FD39 /* Maily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maily.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8BDEA3D32167F7EB00A74A6D /* Frameworks */ = {
+		8B8095FC2169E8CE00E9FD39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BDEA3E72167F7EC00A74A6D /* Frameworks */ = {
+		8B8096052169E8CE00E9FD39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8096092169E8CE00E9FD39 /* Maily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8BDEA3CD2167F7EB00A74A6D = {
+		8B8095F52169E8CE00E9FD39 = {
 			isa = PBXGroup;
 			children = (
-				8BDEA3D82167F7EB00A74A6D /* Maily */,
-				8BDEA3ED2167F7EC00A74A6D /* MailyTests */,
-				8BDEA3D72167F7EB00A74A6D /* Products */,
+				8B8096012169E8CE00E9FD39 /* Maily */,
+				8B80960C2169E8CE00E9FD39 /* MailyTests */,
+				8B8096002169E8CE00E9FD39 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8BDEA3D72167F7EB00A74A6D /* Products */ = {
+		8B8096002169E8CE00E9FD39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BDEA3D62167F7EB00A74A6D /* Maily.app */,
-				8BDEA3EA2167F7EC00A74A6D /* MailyTests.xctest */,
+				8B8095FF2169E8CE00E9FD39 /* Maily.framework */,
+				8B8096082169E8CE00E9FD39 /* MailyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BDEA3D82167F7EB00A74A6D /* Maily */ = {
+		8B8096012169E8CE00E9FD39 /* Maily */ = {
 			isa = PBXGroup;
 			children = (
-				8BDEA3D92167F7EB00A74A6D /* AppDelegate.swift */,
-				8BDEA3DB2167F7EB00A74A6D /* ViewController.swift */,
-				8BDEA3DD2167F7EB00A74A6D /* Main.storyboard */,
-				8BDEA3E02167F7EB00A74A6D /* Assets.xcassets */,
-				8BDEA3E22167F7EB00A74A6D /* LaunchScreen.storyboard */,
-				8BDEA3E52167F7EB00A74A6D /* Info.plist */,
+				8B8096022169E8CE00E9FD39 /* Maily.h */,
+				8B8096032169E8CE00E9FD39 /* Info.plist */,
+				8B8096192169E99700E9FD39 /* Maily.swift */,
 			);
 			path = Maily;
 			sourceTree = "<group>";
 		};
-		8BDEA3ED2167F7EC00A74A6D /* MailyTests */ = {
+		8B80960C2169E8CE00E9FD39 /* MailyTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BDEA3EE2167F7EC00A74A6D /* MailyTests.swift */,
-				8BDEA3F02167F7EC00A74A6D /* Info.plist */,
+				8B80960D2169E8CE00E9FD39 /* MailyTests.swift */,
+				8B80960F2169E8CE00E9FD39 /* Info.plist */,
 			);
 			path = MailyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8B8095FA2169E8CE00E9FD39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8096102169E8CE00E9FD39 /* Maily.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		8BDEA3D52167F7EB00A74A6D /* Maily */ = {
+		8B8095FE2169E8CE00E9FD39 /* Maily */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BDEA3F32167F7EC00A74A6D /* Build configuration list for PBXNativeTarget "Maily" */;
+			buildConfigurationList = 8B8096132169E8CE00E9FD39 /* Build configuration list for PBXNativeTarget "Maily" */;
 			buildPhases = (
-				8BDEA3D22167F7EB00A74A6D /* Sources */,
-				8BDEA3D32167F7EB00A74A6D /* Frameworks */,
-				8BDEA3D42167F7EB00A74A6D /* Resources */,
+				8B8095FA2169E8CE00E9FD39 /* Headers */,
+				8B8095FB2169E8CE00E9FD39 /* Sources */,
+				8B8095FC2169E8CE00E9FD39 /* Frameworks */,
+				8B8095FD2169E8CE00E9FD39 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -113,77 +118,73 @@
 			);
 			name = Maily;
 			productName = Maily;
-			productReference = 8BDEA3D62167F7EB00A74A6D /* Maily.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 8B8095FF2169E8CE00E9FD39 /* Maily.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		8BDEA3E92167F7EC00A74A6D /* MailyTests */ = {
+		8B8096072169E8CE00E9FD39 /* MailyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BDEA3F62167F7EC00A74A6D /* Build configuration list for PBXNativeTarget "MailyTests" */;
+			buildConfigurationList = 8B8096162169E8CE00E9FD39 /* Build configuration list for PBXNativeTarget "MailyTests" */;
 			buildPhases = (
-				8BDEA3E62167F7EC00A74A6D /* Sources */,
-				8BDEA3E72167F7EC00A74A6D /* Frameworks */,
-				8BDEA3E82167F7EC00A74A6D /* Resources */,
+				8B8096042169E8CE00E9FD39 /* Sources */,
+				8B8096052169E8CE00E9FD39 /* Frameworks */,
+				8B8096062169E8CE00E9FD39 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8BDEA3EC2167F7EC00A74A6D /* PBXTargetDependency */,
+				8B80960B2169E8CE00E9FD39 /* PBXTargetDependency */,
 			);
 			name = MailyTests;
 			productName = MailyTests;
-			productReference = 8BDEA3EA2167F7EC00A74A6D /* MailyTests.xctest */;
+			productReference = 8B8096082169E8CE00E9FD39 /* MailyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8BDEA3CE2167F7EB00A74A6D /* Project object */ = {
+		8B8095F62169E8CE00E9FD39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Ivan Smetanin";
 				TargetAttributes = {
-					8BDEA3D52167F7EB00A74A6D = {
+					8B8095FE2169E8CE00E9FD39 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
-					8BDEA3E92167F7EC00A74A6D = {
+					8B8096072169E8CE00E9FD39 = {
 						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 8BDEA3D52167F7EB00A74A6D;
 					};
 				};
 			};
-			buildConfigurationList = 8BDEA3D12167F7EB00A74A6D /* Build configuration list for PBXProject "Maily" */;
+			buildConfigurationList = 8B8095F92169E8CE00E9FD39 /* Build configuration list for PBXProject "Maily" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 8BDEA3CD2167F7EB00A74A6D;
-			productRefGroup = 8BDEA3D72167F7EB00A74A6D /* Products */;
+			mainGroup = 8B8095F52169E8CE00E9FD39;
+			productRefGroup = 8B8096002169E8CE00E9FD39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BDEA3D52167F7EB00A74A6D /* Maily */,
-				8BDEA3E92167F7EC00A74A6D /* MailyTests */,
+				8B8095FE2169E8CE00E9FD39 /* Maily */,
+				8B8096072169E8CE00E9FD39 /* MailyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8BDEA3D42167F7EB00A74A6D /* Resources */ = {
+		8B8095FD2169E8CE00E9FD39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BDEA3E42167F7EB00A74A6D /* LaunchScreen.storyboard in Resources */,
-				8BDEA3E12167F7EB00A74A6D /* Assets.xcassets in Resources */,
-				8BDEA3DF2167F7EB00A74A6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BDEA3E82167F7EC00A74A6D /* Resources */ = {
+		8B8096062169E8CE00E9FD39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,54 +194,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8BDEA3D22167F7EB00A74A6D /* Sources */ = {
+		8B8095FB2169E8CE00E9FD39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BDEA3DC2167F7EB00A74A6D /* ViewController.swift in Sources */,
-				8BDEA3DA2167F7EB00A74A6D /* AppDelegate.swift in Sources */,
+				8B80961A2169E99700E9FD39 /* Maily.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BDEA3E62167F7EC00A74A6D /* Sources */ = {
+		8B8096042169E8CE00E9FD39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BDEA3EF2167F7EC00A74A6D /* MailyTests.swift in Sources */,
+				8B80960E2169E8CE00E9FD39 /* MailyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8BDEA3EC2167F7EC00A74A6D /* PBXTargetDependency */ = {
+		8B80960B2169E8CE00E9FD39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8BDEA3D52167F7EB00A74A6D /* Maily */;
-			targetProxy = 8BDEA3EB2167F7EC00A74A6D /* PBXContainerItemProxy */;
+			target = 8B8095FE2169E8CE00E9FD39 /* Maily */;
+			targetProxy = 8B80960A2169E8CE00E9FD39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		8BDEA3DD2167F7EB00A74A6D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BDEA3DE2167F7EB00A74A6D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8BDEA3E22167F7EB00A74A6D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BDEA3E32167F7EB00A74A6D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		8BDEA3F12167F7EC00A74A6D /* Debug */ = {
+		8B8096112169E8CE00E9FD39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,6 +255,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -291,17 +273,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8BDEA3F22167F7EC00A74A6D /* Release */ = {
+		8B8096122169E8CE00E9FD39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -335,6 +319,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -346,59 +331,75 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		8BDEA3F42167F7EC00A74A6D /* Debug */ = {
+		8B8096142169E8CE00E9FD39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A4NNFV669G;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Maily/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = buildy.tech.Maily;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8BDEA3F52167F7EC00A74A6D /* Release */ = {
+		8B8096152169E8CE00E9FD39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A4NNFV669G;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Maily/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = buildy.tech.Maily;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		8BDEA3F72167F7EC00A74A6D /* Debug */ = {
+		8B8096172169E8CE00E9FD39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = MailyTests/Info.plist;
@@ -411,15 +412,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maily.app/Maily";
 			};
 			name = Debug;
 		};
-		8BDEA3F82167F7EC00A74A6D /* Release */ = {
+		8B8096182169E8CE00E9FD39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = MailyTests/Info.plist;
@@ -432,41 +431,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maily.app/Maily";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BDEA3D12167F7EB00A74A6D /* Build configuration list for PBXProject "Maily" */ = {
+		8B8095F92169E8CE00E9FD39 /* Build configuration list for PBXProject "Maily" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BDEA3F12167F7EC00A74A6D /* Debug */,
-				8BDEA3F22167F7EC00A74A6D /* Release */,
+				8B8096112169E8CE00E9FD39 /* Debug */,
+				8B8096122169E8CE00E9FD39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BDEA3F32167F7EC00A74A6D /* Build configuration list for PBXNativeTarget "Maily" */ = {
+		8B8096132169E8CE00E9FD39 /* Build configuration list for PBXNativeTarget "Maily" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BDEA3F42167F7EC00A74A6D /* Debug */,
-				8BDEA3F52167F7EC00A74A6D /* Release */,
+				8B8096142169E8CE00E9FD39 /* Debug */,
+				8B8096152169E8CE00E9FD39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BDEA3F62167F7EC00A74A6D /* Build configuration list for PBXNativeTarget "MailyTests" */ = {
+		8B8096162169E8CE00E9FD39 /* Build configuration list for PBXNativeTarget "MailyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BDEA3F72167F7EC00A74A6D /* Debug */,
-				8BDEA3F82167F7EC00A74A6D /* Release */,
+				8B8096172169E8CE00E9FD39 /* Debug */,
+				8B8096182169E8CE00E9FD39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8BDEA3CE2167F7EB00A74A6D /* Project object */;
+	rootObject = 8B8095F62169E8CE00E9FD39 /* Project object */;
 }
