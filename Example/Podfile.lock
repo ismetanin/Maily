@@ -1,0 +1,16 @@
+PODS:
+  - Maily (1.0)
+
+DEPENDENCIES:
+  - Maily (from `../`)
+
+EXTERNAL SOURCES:
+  Maily:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Maily: 22a6f2b1ab0e91f572d198b90e77b340b788bf23
+
+PODFILE CHECKSUM: c9ebc238cdb14e29e5b6e9e189cd4927afc299ac
+
+COCOAPODS: 1.5.3

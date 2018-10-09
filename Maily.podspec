@@ -7,8 +7,9 @@ Pod::Spec.new do |s|
   s.author = { "Ivan Smetanin" => "smetanin23@yandex.ru" }
   s.source = { :git => "https://github.com/ismetanin/Maily.git", :tag => s.version }
 
-  s.source_files = 'Source/**/*.swift'
+  s.source_files = 'Maily/**/*.swift'
   s.framework = 'UIKit'
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '4.2'
 
 end
