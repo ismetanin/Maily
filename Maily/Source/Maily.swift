@@ -8,14 +8,10 @@
 
 import Foundation
 
-enum Constants {
+public enum Constants {
 
-    static let standardClients: [MailClient] = [
+    public static let standardClients: [MailClient] = [
         StandardMailClient.shared,
-        // sparrow:[to]?subject=[subject]&body=[body]
-        ThirdPartyMailClient(name: "Sparrow", scheme: "sparrow",
-                             root: nil, recipientKey: nil,
-                             subjectKey: "subject", bodyKey: "body"),
 
         // googlegmail:///co?to=[to]&subject=[subject]&body=[body]
         ThirdPartyMailClient(name: "Gmail", scheme: "googlegmail",
@@ -52,32 +48,60 @@ enum Constants {
 
 open class Maily {
 
-    static var canSendMail: Bool {
-        return false
+    public static var canSendMail: Bool {
+        return !Maily.clients.filter { $0.isAvailable }.isEmpty
     }
 
-    private static var clients: [MailClient] = Constants.standardClients
+    public static var clients: [MailClient] = Constants.standardClients
 
-    static func sendEmail(recipients: [String] = [], subject: String = "",
-                          body: String = "", onCompleted: (() -> Void),
-                          onCancel: (() -> Void)) {
+    /// Show an action sheet with available mail clients options.
+    ///
+    /// - Parameters:
+    ///   - recipient: Recipient of the mail
+    ///   - subject: Subject of the mail
+    ///   - body: Body of the mail
+    ///   - onCompleted: Executes when user selects any mail client
+    ///   - onCancel: Executes when user selects "Cancel"
+    public static func sendMail(recipient: String?, subject: String?,
+                                body: String?, onCompleted: @escaping (() -> Void),
+                                onCancel: @escaping (() -> Void)) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 
+        let application = UIApplication.shared
+        let clients = Maily.clients.filter { $0.isAvailable }
+
+        for client in clients {
+            let action = UIAlertAction(title: client.name, style: .default) { _ in
+                client.sendEmail(recipient: recipient, subject: subject, body: body, completion: {
+                    onCompleted()
+                })
+            }
+            alert.addAction(action)
+        }
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+            onCancel()
+        }
+        alert.addAction(cancelAction)
+
+        application.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
     }
 
 }
 
-protocol MailClient {
+public protocol MailClient {
     var isAvailable: Bool { get }
+    var name: String { get }
     func sendEmail(recipient: String?, subject: String?, body: String?, completion: (() -> Void)?)
 }
 
 import UIKit
 
-open class ThirdPartyMailClient: MailClient {
+public class ThirdPartyMailClient: MailClient {
 
     // MARK: - Constants
 
-    private let name: String
+    public let name: String
     private let scheme: String
     private let root: String?
     private let recipientKey: String?
@@ -86,7 +110,7 @@ open class ThirdPartyMailClient: MailClient {
 
     // MARK: - Properties
 
-    var isAvailable: Bool {
+    public var isAvailable: Bool {
         var components = URLComponents()
         components.scheme = self.scheme
 
@@ -99,9 +123,9 @@ open class ThirdPartyMailClient: MailClient {
 
     // MARK: - Initialization and deinitialization
 
-    init(name: String, scheme: String,
-         root: String?, recipientKey: String?,
-         subjectKey: String?, bodyKey: String?) {
+    public init(name: String, scheme: String,
+                root: String?, recipientKey: String?,
+                subjectKey: String?, bodyKey: String?) {
         self.name = name
         self.scheme = scheme
         self.root = root
@@ -160,15 +184,18 @@ import MessageUI
 
 open class StandardMailClient: MailClient {
 
-    var isAvailable: Bool {
+    public var isAvailable: Bool {
         return MFMailComposeViewController.canSendMail()
+    }
+    public var name: String {
+        return "Mail"
     }
 
     static let shared = StandardMailClient()
 
     private init() {}
 
-    func sendEmail(recipient: String?, subject: String?, body: String?, completion: (() -> Void)?) {
+    public func sendEmail(recipient: String?, subject: String?, body: String?, completion: (() -> Void)?) {
         let controller = MailComposeViewController()
         controller.composingCompletion = completion
         UIApplication.shared.keyWindow?.rootViewController?.present(

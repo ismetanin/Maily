@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,18 +24,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8lj-Ns-6iM">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8lj-Ns-6iM">
                                 <rect key="frame" x="16" y="86" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZOU-dR-Bfh">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Body" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZOU-dR-Bfh">
                                 <rect key="frame" x="16" y="132" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLa-40-Qtf">
+                                <rect key="frame" x="152" y="190" width="71" height="52"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="16" maxX="16" maxY="16"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KEk-Al-wSJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -42,14 +52,21 @@
                             <constraint firstItem="ZOU-dR-Bfh" firstAttribute="top" secondItem="8lj-Ns-6iM" secondAttribute="bottom" constant="16" id="GkE-mB-E7X"/>
                             <constraint firstItem="ZOU-dR-Bfh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MQO-dW-i6y"/>
                             <constraint firstItem="F2X-Yw-GqJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="MYK-Lc-EJe"/>
+                            <constraint firstItem="gLa-40-Qtf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Nty-Sr-YsF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F2X-Yw-GqJ" secondAttribute="trailing" constant="16" id="Sle-5L-wAO"/>
                             <constraint firstItem="8lj-Ns-6iM" firstAttribute="top" secondItem="F2X-Yw-GqJ" secondAttribute="bottom" constant="16" id="SwU-d6-Iwh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZOU-dR-Bfh" secondAttribute="trailing" constant="16" id="Vn7-dK-8fp"/>
                             <constraint firstItem="F2X-Yw-GqJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="moJ-Ks-yTO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8lj-Ns-6iM" secondAttribute="trailing" constant="16" id="pua-sQ-HYj"/>
+                            <constraint firstItem="gLa-40-Qtf" firstAttribute="top" secondItem="ZOU-dR-Bfh" secondAttribute="bottom" constant="28" id="z0W-FI-7Fj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bodyTextField" destination="ZOU-dR-Bfh" id="P62-0a-HZa"/>
+                        <outlet property="recipientTextField" destination="F2X-Yw-GqJ" id="cOA-mr-K8M"/>
+                        <outlet property="subjectTextField" destination="8lj-Ns-6iM" id="XWG-oA-VWc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
