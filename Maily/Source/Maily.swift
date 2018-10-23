@@ -54,6 +54,8 @@ open class Maily {
 
     public static var clients: [MailClient] = Constants.standardClients
 
+    public static var cancelButtonTitle: String = "Cancel"
+
     /// Show an action sheet with available mail clients options.
     ///
     /// - Parameters:
@@ -79,7 +81,7 @@ open class Maily {
             alert.addAction(action)
         }
 
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+        let cancelAction = UIAlertAction(title: Maily.cancelButtonTitle, style: .cancel) { _ in
             onCancel()
         }
         alert.addAction(cancelAction)

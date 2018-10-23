@@ -26,11 +26,13 @@
 /* Begin PBXFileReference section */
 		8B8095FF2169E8CE00E9FD39 /* Maily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8096022169E8CE00E9FD39 /* Maily.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maily.h; sourceTree = "<group>"; };
-		8B8096032169E8CE00E9FD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8096082169E8CE00E9FD39 /* MailyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B80960D2169E8CE00E9FD39 /* MailyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailyTests.swift; sourceTree = "<group>"; };
 		8B80960F2169E8CE00E9FD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8096192169E99700E9FD39 /* Maily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maily.swift; sourceTree = "<group>"; };
+		8BD77DBF217FAFC70062EC69 /* Maily.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Maily.podspec; sourceTree = "<group>"; };
+		8BD77DC2217FAFDD0062EC69 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8BD77DCD217FB15F0062EC69 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				8B8096012169E8CE00E9FD39 /* Maily */,
 				8B80960C2169E8CE00E9FD39 /* MailyTests */,
 				8B8096002169E8CE00E9FD39 /* Products */,
+				8BD77DC1217FAFCA0062EC69 /* Non-iOS Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,8 +76,8 @@
 		8B8096012169E8CE00E9FD39 /* Maily */ = {
 			isa = PBXGroup;
 			children = (
+				8BD77DCD217FB15F0062EC69 /* Info.plist */,
 				8B8096022169E8CE00E9FD39 /* Maily.h */,
-				8B8096032169E8CE00E9FD39 /* Info.plist */,
 				8BFCA361216BE93E009C3CFB /* Source */,
 			);
 			path = Maily;
@@ -87,6 +90,15 @@
 				8B80960F2169E8CE00E9FD39 /* Info.plist */,
 			);
 			path = MailyTests;
+			sourceTree = "<group>";
+		};
+		8BD77DC1217FAFCA0062EC69 /* Non-iOS Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BD77DBF217FAFC70062EC69 /* Maily.podspec */,
+				8BD77DC2217FAFDD0062EC69 /* LICENSE */,
+			);
+			name = "Non-iOS Resources";
 			sourceTree = "<group>";
 		};
 		8BFCA361216BE93E009C3CFB /* Source */ = {
@@ -171,7 +183,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 			);
 			mainGroup = 8B8095F52169E8CE00E9FD39;
 			productRefGroup = 8B8096002169E8CE00E9FD39 /* Products */;
@@ -233,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -297,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

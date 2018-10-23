@@ -1,5 +1,5 @@
 PODS:
-  - Maily (1.0)
+  - Maily (1.0.3)
 
 DEPENDENCIES:
   - Maily (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Maily: 22a6f2b1ab0e91f572d198b90e77b340b788bf23
+  Maily: 9c0ef1cbaca4116da13573b58151acae637a131c
 
 PODFILE CHECKSUM: c9ebc238cdb14e29e5b6e9e189cd4927afc299ac
 
