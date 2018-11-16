@@ -112,11 +112,11 @@
 		8BFCA361216BE93E009C3CFB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8B8096192169E99700E9FD39 /* Maily.swift */,
-				8BD77DDB217FB67B0062EC69 /* StandardMailClient.swift */,
-				8BD77DD7217FB64C0062EC69 /* MailClient.swift */,
-				8BD77DD9217FB66B0062EC69 /* ThirdPartyMailClient.swift */,
 				8BD77DD5217FB60E0062EC69 /* Constants.swift */,
+				8B8096192169E99700E9FD39 /* Maily.swift */,
+				8BD77DD7217FB64C0062EC69 /* MailClient.swift */,
+				8BD77DDB217FB67B0062EC69 /* StandardMailClient.swift */,
+				8BD77DD9217FB66B0062EC69 /* ThirdPartyMailClient.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -194,6 +194,9 @@
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 8B8095F52169E8CE00E9FD39;
 			productRefGroup = 8B8096002169E8CE00E9FD39 /* Products */;
 			projectDirPath = "";

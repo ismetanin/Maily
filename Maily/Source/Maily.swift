@@ -16,9 +16,10 @@ open class Maily {
 
     public static var clients: [MailClient] = Constants.standardClients
 
+    /// Title for cancel button in action sheet
     public static var cancelButtonTitle: String = "Cancel"
 
-    /// Show an action sheet with available mail clients options.
+    /// Shows an action sheet with available mail clients options.
     ///
     /// - Parameters:
     ///   - recipient: Recipient of the mail
