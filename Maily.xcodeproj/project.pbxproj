@@ -11,6 +11,10 @@
 		8B80960E2169E8CE00E9FD39 /* MailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80960D2169E8CE00E9FD39 /* MailyTests.swift */; };
 		8B8096102169E8CE00E9FD39 /* Maily.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B8096022169E8CE00E9FD39 /* Maily.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B80961A2169E99700E9FD39 /* Maily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8096192169E99700E9FD39 /* Maily.swift */; };
+		8BD77DD6217FB60E0062EC69 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD77DD5217FB60E0062EC69 /* Constants.swift */; };
+		8BD77DD8217FB64C0062EC69 /* MailClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD77DD7217FB64C0062EC69 /* MailClient.swift */; };
+		8BD77DDA217FB66B0062EC69 /* ThirdPartyMailClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD77DD9217FB66B0062EC69 /* ThirdPartyMailClient.swift */; };
+		8BD77DDC217FB67B0062EC69 /* StandardMailClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD77DDB217FB67B0062EC69 /* StandardMailClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,11 +30,17 @@
 /* Begin PBXFileReference section */
 		8B8095FF2169E8CE00E9FD39 /* Maily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8096022169E8CE00E9FD39 /* Maily.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maily.h; sourceTree = "<group>"; };
-		8B8096032169E8CE00E9FD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8096082169E8CE00E9FD39 /* MailyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B80960D2169E8CE00E9FD39 /* MailyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailyTests.swift; sourceTree = "<group>"; };
 		8B80960F2169E8CE00E9FD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8096192169E99700E9FD39 /* Maily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maily.swift; sourceTree = "<group>"; };
+		8BD77DBF217FAFC70062EC69 /* Maily.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Maily.podspec; sourceTree = "<group>"; };
+		8BD77DC2217FAFDD0062EC69 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8BD77DCD217FB15F0062EC69 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD77DD5217FB60E0062EC69 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8BD77DD7217FB64C0062EC69 /* MailClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailClient.swift; sourceTree = "<group>"; };
+		8BD77DD9217FB66B0062EC69 /* ThirdPartyMailClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyMailClient.swift; sourceTree = "<group>"; };
+		8BD77DDB217FB67B0062EC69 /* StandardMailClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardMailClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 				8B8096012169E8CE00E9FD39 /* Maily */,
 				8B80960C2169E8CE00E9FD39 /* MailyTests */,
 				8B8096002169E8CE00E9FD39 /* Products */,
+				8BD77DC1217FAFCA0062EC69 /* Non-iOS Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,8 +84,8 @@
 		8B8096012169E8CE00E9FD39 /* Maily */ = {
 			isa = PBXGroup;
 			children = (
+				8BD77DCD217FB15F0062EC69 /* Info.plist */,
 				8B8096022169E8CE00E9FD39 /* Maily.h */,
-				8B8096032169E8CE00E9FD39 /* Info.plist */,
 				8BFCA361216BE93E009C3CFB /* Source */,
 			);
 			path = Maily;
@@ -89,10 +100,23 @@
 			path = MailyTests;
 			sourceTree = "<group>";
 		};
+		8BD77DC1217FAFCA0062EC69 /* Non-iOS Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BD77DBF217FAFC70062EC69 /* Maily.podspec */,
+				8BD77DC2217FAFDD0062EC69 /* LICENSE */,
+			);
+			name = "Non-iOS Resources";
+			sourceTree = "<group>";
+		};
 		8BFCA361216BE93E009C3CFB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8BD77DD5217FB60E0062EC69 /* Constants.swift */,
 				8B8096192169E99700E9FD39 /* Maily.swift */,
+				8BD77DD7217FB64C0062EC69 /* MailClient.swift */,
+				8BD77DDB217FB67B0062EC69 /* StandardMailClient.swift */,
+				8BD77DD9217FB66B0062EC69 /* ThirdPartyMailClient.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -207,6 +231,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B80961A2169E99700E9FD39 /* Maily.swift in Sources */,
+				8BD77DD6217FB60E0062EC69 /* Constants.swift in Sources */,
+				8BD77DDA217FB66B0062EC69 /* ThirdPartyMailClient.swift in Sources */,
+				8BD77DDC217FB67B0062EC69 /* StandardMailClient.swift in Sources */,
+				8BD77DD8217FB64C0062EC69 /* MailClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -297,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
