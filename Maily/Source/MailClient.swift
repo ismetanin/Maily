@@ -9,5 +9,5 @@
 public protocol MailClient {
     var isAvailable: Bool { get }
     var name: String { get }
-    func sendEmail(recipient: String?, subject: String?, body: String?, presentCompletion: (() -> Void)?)
+    func sendEmail(recipient: String?, subject: String?, body: String?, presentHandler: (() -> Void)?)
 }

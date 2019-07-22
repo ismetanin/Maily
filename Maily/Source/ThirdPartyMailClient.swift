@@ -8,20 +8,13 @@
 
 import UIKit
 
-public class ThirdPartyMailClient: MailClient {
-
-    // MARK: - Constants
-
-    public let name: String
-    private let scheme: String
-    private let root: String?
-    private let recipientKey: String?
-    private let subjectKey: String?
-    private let bodyKey: String?
+open class ThirdPartyMailClient: MailClient {
 
     // MARK: - Properties
 
-    public var isAvailable: Bool {
+    open var name: String
+
+    open var isAvailable: Bool {
         var components = URLComponents()
         components.scheme = self.scheme
 
@@ -32,11 +25,22 @@ public class ThirdPartyMailClient: MailClient {
         return UIApplication.shared.canOpenURL(url)
     }
 
+    private let scheme: String
+    private let root: String?
+    private let recipientKey: String?
+    private let subjectKey: String?
+    private let bodyKey: String?
+
     // MARK: - Initialization and deinitialization
 
-    public init(name: String, scheme: String,
-                root: String?, recipientKey: String?,
-                subjectKey: String?, bodyKey: String?) {
+    public init(
+        name: String,
+        scheme: String,
+        root: String?,
+        recipientKey: String?,
+        subjectKey: String?,
+        bodyKey: String?
+    ) {
         self.name = name
         self.scheme = scheme
         self.root = root
@@ -45,14 +49,14 @@ public class ThirdPartyMailClient: MailClient {
         self.bodyKey = bodyKey
     }
 
-    // MARK: - Public methods
+    // MARK: - Open methods
 
-    public func sendEmail(recipient: String?, subject: String?, body: String?, presentCompletion: (() -> Void)?) {
+    open func sendEmail(recipient: String?, subject: String?, body: String?, presentHandler: (() -> Void)?) {
         guard let url = self.composeURL(recipient: recipient, subject: subject, body: body) else {
             return
         }
         UIApplication.shared.open(url, options: [:]) { _ in
-            presentCompletion?()
+            presentHandler?()
         }
     }
 
@@ -62,10 +66,8 @@ public class ThirdPartyMailClient: MailClient {
         var components = URLComponents(string: "\(scheme):\(root ?? "")")
         components?.scheme = self.scheme
 
-        if recipientKey == nil {
-            if let recipient = recipient {
-                components = URLComponents(string: "\(scheme):\(root ?? "")\(recipient)")
-            }
+        if recipientKey == nil, let recipient = recipient {
+            components = URLComponents(string: "\(scheme):\(root ?? "")\(recipient)")
         }
 
         var queryItems: [URLQueryItem] = []

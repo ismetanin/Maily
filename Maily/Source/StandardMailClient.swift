@@ -10,24 +10,26 @@ import MessageUI
 
 open class StandardMailClient: MailClient {
 
-    public var isAvailable: Bool {
+    public static let shared = StandardMailClient()
+
+    public init() {}
+
+    // MARK: - Properties
+
+    open var isAvailable: Bool {
         return MFMailComposeViewController.canSendMail()
     }
-    public var name: String {
-        return "Mail"
-    }
+    open var name: String = "Mail"
 
-    static let shared = StandardMailClient()
+    // MARK: - Open methods
 
-    private init() {}
-
-    public func sendEmail(recipient: String?, subject: String?, body: String?, presentCompletion: (() -> Void)?) {
+    open func sendEmail(recipient: String?, subject: String?, body: String?, presentHandler: (() -> Void)?) {
         let controller = MFMailComposeViewController()
         UIApplication.shared.keyWindow?.rootViewController?.present(
             controller,
             animated: true,
             completion: {
-                presentCompletion?()
+                presentHandler?()
             }
         )
     }

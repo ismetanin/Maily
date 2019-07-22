@@ -7,28 +7,61 @@
 //
 
 import XCTest
+import Maily
 @testable import MailyExample
 
-class MailyExampleTests: XCTestCase {
+final class MailyExampleTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testThatAllNeededInterfaceDeclarationsVisible() {
+        _ = Maily.shared.cancelButtonTitle
+        _ = Maily.shared.canSendMail
+        _ = Maily.shared.clients
+        Maily.shared.sendMail(recipient: nil, subject: nil, body: nil, presentHandler: nil, cancelHandler: nil)
+        XCTAssert(true)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func testThatMailyOverridable() {
+        final class MailyChild: Maily {
+            override var cancelButtonTitle: String {
+                get { return "" }
+                set {}
+            }
+            override var canSendMail: Bool {
+                return false
+            }
+            override var clients: [MailClient] {
+                get { return [] }
+                set {}
+            }
+            override func sendMail(
+                recipient: String?,
+                subject: String?,
+                body: String?,
+                presentHandler: (() -> Void)?,
+                cancelHandler onCancel: (() -> Void)?
+            ) {
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+            }
+            override init() {
+                super.init()
+            }
         }
+        _ = MailyChild()
+        XCTAssert(true)
+    }
+
+    func testThatMailClientImplementable() {
+        final class SomeMailClient: MailClient {
+            var isAvailable: Bool = true
+            var name: String = ""
+            func sendEmail(recipient: String?, subject: String?, body: String?, presentHandler: (() -> Void)?) {}
+        }
+        _ = SomeMailClient()
+        XCTAssert(true)
+    }
+
+    func testThatThirdPartyMailClientCreatable() {
+        _ = ThirdPartyMailClient(name: "", scheme: "", root: "", recipientKey: nil, subjectKey: nil, bodyKey: nil)
     }
 
 }

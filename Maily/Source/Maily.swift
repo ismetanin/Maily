@@ -10,14 +10,18 @@ import Foundation
 
 open class Maily {
 
-    public static var canSendMail: Bool {
-        return !Maily.clients.filter { $0.isAvailable }.isEmpty
+    public static let shared = Maily()
+
+    public init() {}
+
+    open var canSendMail: Bool {
+        return !clients.filter { $0.isAvailable }.isEmpty
     }
 
-    public static var clients: [MailClient] = Constants.standardClients
+    open var clients: [MailClient] = Constants.standardClients
 
     /// Title for cancel button in action sheet
-    public static var cancelButtonTitle: String = "Cancel"
+    open var cancelButtonTitle: String = "Cancel"
 
     /// Shows an action sheet with available mail clients options.
     ///
@@ -27,27 +31,29 @@ open class Maily {
     ///   - body: Body of the mail
     ///   - onCompleted: Executes when user selects any mail client
     ///   - onCancel: Executes when user selects "Cancel"
-    public static func sendMail(recipient: String?,
-                                subject: String?,
-                                body: String?,
-                                onPresented: @escaping (() -> Void),
-                                onCancel: @escaping (() -> Void)) {
+    open func sendMail(
+        recipient: String?,
+        subject: String?,
+        body: String?,
+        presentHandler: (() -> Void)?,
+        cancelHandler: (() -> Void)?
+    ) {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 
         let application = UIApplication.shared
-        let clients = Maily.clients.filter { $0.isAvailable }
+        let availableClients = clients.filter { $0.isAvailable }
 
-        for client in clients {
+        for client in availableClients {
             let action = UIAlertAction(title: client.name, style: .default) { _ in
-                client.sendEmail(recipient: recipient, subject: subject, body: body, presentCompletion: {
-                    onPresented()
+                client.sendEmail(recipient: recipient, subject: subject, body: body, presentHandler: {
+                    presentHandler?()
                 })
             }
             alert.addAction(action)
         }
 
-        let cancelAction = UIAlertAction(title: Maily.cancelButtonTitle, style: .cancel) { _ in
-            onCancel()
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel) { _ in
+            cancelHandler?()
         }
         alert.addAction(cancelAction)
 

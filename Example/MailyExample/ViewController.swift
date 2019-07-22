@@ -9,36 +9,30 @@
 import UIKit
 import Maily
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    // MARK: - IBOutlets
+    // MARK: - Subviews
 
     @IBOutlet weak var recipientTextField: UITextField!
     @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var bodyTextField: UITextField!
 
-    // MARK: - IBActions
+    // MARK: - Actions
 
     @IBAction func sendButtonAction(_ sender: UIButton) {
         sendEmail()
     }
 
-    // MARK: - UIViewController
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Private methods
 
     private func sendEmail() {
-        if Maily.canSendMail {
-            Maily.sendMail(
+        if Maily.shared.canSendMail {
+            Maily.shared.sendMail(
                 recipient: recipientTextField.text, subject: subjectTextField.text, body: bodyTextField.text,
-                onCompleted: {
-                    print("completed")
+                presentHandler: {
+                    print("presented")
                 },
-                onCancel: {
+                cancelHandler: {
                     print("cancel")
                 }
             )

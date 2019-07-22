@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26C0B8AD34A8F3CC5EFCA533 /* Pods_MailyExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0901AB67BB4372E89092B0D8 /* Pods_MailyExample.framework */; };
+		020A24B322E6358700A1D2BA /* Maily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020A24B222E6358700A1D2BA /* Maily.framework */; };
+		020A24B522E63B9200A1D2BA /* Maily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020A24B422E63B9200A1D2BA /* Maily.framework */; };
 		8BFCA342216BE5D6009C3CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCA341216BE5D6009C3CFB /* AppDelegate.swift */; };
 		8BFCA344216BE5D6009C3CFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCA343216BE5D6009C3CFB /* ViewController.swift */; };
 		8BFCA347216BE5D6009C3CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCA345216BE5D6009C3CFB /* Main.storyboard */; };
 		8BFCA349216BE5D8009C3CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCA348216BE5D8009C3CFB /* Assets.xcassets */; };
 		8BFCA34C216BE5D8009C3CFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCA34A216BE5D8009C3CFB /* LaunchScreen.storyboard */; };
 		8BFCA357216BE5D8009C3CFB /* MailyExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCA356216BE5D8009C3CFB /* MailyExampleTests.swift */; };
-		F620BAB1B2338679BFE4FF5F /* Pods_MailyExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D223F289DB886DD776A5EE /* Pods_MailyExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0901AB67BB4372E89092B0D8 /* Pods_MailyExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailyExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13CA362DB24E6FF394F1D844 /* Pods-MailyExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailyExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailyExampleTests/Pods-MailyExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		67A3D4B63387DCD6B0A4FE22 /* Pods-MailyExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailyExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailyExampleTests/Pods-MailyExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		74BABBD0725E2F1C74F23B2E /* Pods-MailyExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailyExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailyExample/Pods-MailyExample.debug.xcconfig"; sourceTree = "<group>"; };
+		020A24B222E6358700A1D2BA /* Maily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Maily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		020A24B422E63B9200A1D2BA /* Maily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Maily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFCA33E216BE5D6009C3CFB /* MailyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFCA341216BE5D6009C3CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BFCA343216BE5D6009C3CFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +40,6 @@
 		8BFCA352216BE5D8009C3CFB /* MailyExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailyExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFCA356216BE5D8009C3CFB /* MailyExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailyExampleTests.swift; sourceTree = "<group>"; };
 		8BFCA358216BE5D8009C3CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5D223F289DB886DD776A5EE /* Pods_MailyExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailyExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5B71C1C1BC42ECE0D907BC2 /* Pods-MailyExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailyExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailyExample/Pods-MailyExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26C0B8AD34A8F3CC5EFCA533 /* Pods_MailyExample.framework in Frameworks */,
+				020A24B322E6358700A1D2BA /* Maily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,18 +55,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F620BAB1B2338679BFE4FF5F /* Pods_MailyExampleTests.framework in Frameworks */,
+				020A24B522E63B9200A1D2BA /* Maily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0154DC65484EC05B06104FFD /* Frameworks */ = {
+		020A24B122E6358700A1D2BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0901AB67BB4372E89092B0D8 /* Pods_MailyExample.framework */,
-				B5D223F289DB886DD776A5EE /* Pods_MailyExampleTests.framework */,
+				020A24B422E63B9200A1D2BA /* Maily.framework */,
+				020A24B222E6358700A1D2BA /* Maily.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,8 +77,7 @@
 				8BFCA340216BE5D6009C3CFB /* MailyExample */,
 				8BFCA355216BE5D8009C3CFB /* MailyExampleTests */,
 				8BFCA33F216BE5D6009C3CFB /* Products */,
-				BFA574085E3DE2AA1152B867 /* Pods */,
-				0154DC65484EC05B06104FFD /* Frameworks */,
+				020A24B122E6358700A1D2BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,17 +112,6 @@
 			path = MailyExampleTests;
 			sourceTree = "<group>";
 		};
-		BFA574085E3DE2AA1152B867 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				74BABBD0725E2F1C74F23B2E /* Pods-MailyExample.debug.xcconfig */,
-				F5B71C1C1BC42ECE0D907BC2 /* Pods-MailyExample.release.xcconfig */,
-				13CA362DB24E6FF394F1D844 /* Pods-MailyExampleTests.debug.xcconfig */,
-				67A3D4B63387DCD6B0A4FE22 /* Pods-MailyExampleTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,11 +119,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BFCA35B216BE5D8009C3CFB /* Build configuration list for PBXNativeTarget "MailyExample" */;
 			buildPhases = (
-				88F54AEC575EB42DD267574A /* [CP] Check Pods Manifest.lock */,
 				8BFCA33A216BE5D6009C3CFB /* Sources */,
 				8BFCA33B216BE5D6009C3CFB /* Frameworks */,
 				8BFCA33C216BE5D6009C3CFB /* Resources */,
-				61F86FAA758D2B9C7FF01935 /* [CP] Embed Pods Frameworks */,
+				020A24B022E6357200A1D2BA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -154,7 +137,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BFCA35E216BE5D8009C3CFB /* Build configuration list for PBXNativeTarget "MailyExampleTests" */;
 			buildPhases = (
-				A2CB1D56C092B0715489CCE2 /* [CP] Check Pods Manifest.lock */,
 				8BFCA34E216BE5D8009C3CFB /* Sources */,
 				8BFCA34F216BE5D8009C3CFB /* Frameworks */,
 				8BFCA350216BE5D8009C3CFB /* Resources */,
@@ -228,7 +210,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		61F86FAA758D2B9C7FF01935 /* [CP] Embed Pods Frameworks */ = {
+		020A24B022E6357200A1D2BA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,63 +218,15 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MailyExample/Pods-MailyExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Maily/Maily.framework",
+				"$(SRCROOT)/newInputFile",
 			);
-			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Maily.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MailyExample/Pods-MailyExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88F54AEC575EB42DD267574A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MailyExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2CB1D56C092B0715489CCE2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MailyExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -462,11 +396,10 @@
 		};
 		8BFCA35C216BE5D8009C3CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74BABBD0725E2F1C74F23B2E /* Pods-MailyExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A4NNFV669G;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MailyExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +408,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = buildy.tech.MailyExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -482,11 +416,10 @@
 		};
 		8BFCA35D216BE5D8009C3CFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5B71C1C1BC42ECE0D907BC2 /* Pods-MailyExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A4NNFV669G;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MailyExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -495,6 +428,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = buildy.tech.MailyExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -502,7 +436,6 @@
 		};
 		8BFCA35F216BE5D8009C3CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13CA362DB24E6FF394F1D844 /* Pods-MailyExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,7 +457,6 @@
 		};
 		8BFCA360216BE5D8009C3CFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67A3D4B63387DCD6B0A4FE22 /* Pods-MailyExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
