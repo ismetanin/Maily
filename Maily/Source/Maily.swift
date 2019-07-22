@@ -14,10 +14,12 @@ open class Maily {
 
     public init() {}
 
+    /// Indicates whether email may be sent through available clients
     open var canSendMail: Bool {
         return !clients.filter { $0.isAvailable }.isEmpty
     }
 
+    /// Mail clients that may be used to send email
     open var clients: [MailClient] = Constants.standardClients
 
     /// Title for cancel button in action sheet
