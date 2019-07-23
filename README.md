@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/ismetanin/Maily.svg?branch=master)](https://travis-ci.org/ismetanin/Maily) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+
 # Maily
 
 Send email to third-party mail clients easy.
