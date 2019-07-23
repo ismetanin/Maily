@@ -59,13 +59,13 @@ Maily.shared.clients
 
 ### Localization
 
-To localize action sheet "Cancel" button you may just change `cancelButtonTitle` property in `Maily.shared`.
+To localize action sheet "Cancel" button you can just change `cancelButtonTitle` property in `Maily.shared`.
 
 ### Customization
 
 Almost every class, property, and method are `open` so you can just subclass or build Facade over them.
 
-To add new third party client you may just add it to the `Maily.shared.clients`, or contribute to this library.
+To add new third party client you may can add it to the `Maily.shared.clients`, or contribute to this library.
 
 ## Requirements
 
