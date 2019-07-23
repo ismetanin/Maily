@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = "Maily"
   s.version = "1.0.0"
-  s.summary = "Library that helps you send email with standard mail client or third party mail clients"
+  s.summary = "Send email to third-party mail clients easy."
   s.homepage = "https://github.com/ismetanin/Maily"
   s.license = "MIT"
   s.author = { "Ivan Smetanin" => "smetanin23@yandex.ru" }
