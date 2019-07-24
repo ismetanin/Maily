@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		020A24B322E6358700A1D2BA /* Maily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020A24B222E6358700A1D2BA /* Maily.framework */; };
 		020A24B522E63B9200A1D2BA /* Maily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020A24B422E63B9200A1D2BA /* Maily.framework */; };
+		0261AF0422E8538E00F836F8 /* Maily.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 020A24B222E6358700A1D2BA /* Maily.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8BFCA342216BE5D6009C3CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCA341216BE5D6009C3CFB /* AppDelegate.swift */; };
 		8BFCA344216BE5D6009C3CFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCA343216BE5D6009C3CFB /* ViewController.swift */; };
 		8BFCA347216BE5D6009C3CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCA345216BE5D6009C3CFB /* Main.storyboard */; };
@@ -26,6 +27,20 @@
 			remoteInfo = MailyExample;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0261AF0522E8538E00F836F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0261AF0422E8538E00F836F8 /* Maily.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		020A24B222E6358700A1D2BA /* Maily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Maily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +138,7 @@
 				8BFCA33B216BE5D6009C3CFB /* Frameworks */,
 				8BFCA33C216BE5D6009C3CFB /* Resources */,
 				020A24B022E6357200A1D2BA /* ShellScript */,
+				0261AF0522E8538E00F836F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
