@@ -48,13 +48,13 @@ Before start you are required to add all needed schemes to your `LSApplicationQu
 Maily.shared.sendMail(recipient: "", subject: "", body: "", presentHandler: {}, cancelHandler: {})
 ```
 
-Before this action you'll probably want to check clients availability, to do this you may call
+Before this action you would probably like to check client's availability. For this you may call
 
 ```swift
 Maily.shared.canSendMail
 ```
 
-To access available client you may just use
+To access an available client just use
 
 ```swift
 Maily.shared.clients
@@ -62,13 +62,13 @@ Maily.shared.clients
 
 ### Localization
 
-To localize action sheet "Cancel" button you can just change `cancelButtonTitle` property in `Maily.shared`.
+To localize action sheet "Cancel" button just change `cancelButtonTitle` property in `Maily.shared`.
 
 ### Customization
 
-Almost every class, property, and method are `open` so you can just subclass or build Facade over them.
+Almost every class, property, and method is `open` so you can just subclass or build Facade over them.
 
-To add new third party client you may can add it to the `Maily.shared.clients`, or contribute to this library.
+To add a new third party client you may add it to the `Maily.shared.clients`, or contribute to the library.
 
 ## Requirements
 
