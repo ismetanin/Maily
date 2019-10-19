@@ -62,7 +62,7 @@ Maily.shared.clients
 
 ### Localization
 
-To localize action sheet "Cancel" button  just change `cancelButtonTitle` property in `Maily.shared`.
+To localize action sheet "Cancel" button just change `cancelButtonTitle` property in `Maily.shared`.
 
 ### Customization
 
