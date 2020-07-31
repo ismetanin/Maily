@@ -3,13 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020A24B322E6358700A1D2BA /* Maily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020A24B222E6358700A1D2BA /* Maily.framework */; };
 		020A24B522E63B9200A1D2BA /* Maily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020A24B422E63B9200A1D2BA /* Maily.framework */; };
-		0261AF0422E8538E00F836F8 /* Maily.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 020A24B222E6358700A1D2BA /* Maily.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8BFCA342216BE5D6009C3CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCA341216BE5D6009C3CFB /* AppDelegate.swift */; };
 		8BFCA344216BE5D6009C3CFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCA343216BE5D6009C3CFB /* ViewController.swift */; };
 		8BFCA347216BE5D6009C3CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFCA345216BE5D6009C3CFB /* Main.storyboard */; };
@@ -35,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0261AF0422E8538E00F836F8 /* Maily.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020A24B322E6358700A1D2BA /* Maily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +89,7 @@
 				8BFCA355216BE5D8009C3CFB /* MailyExampleTests */,
 				8BFCA33F216BE5D6009C3CFB /* Products */,
 				020A24B122E6358700A1D2BA /* Frameworks */,
+				D08ADAF48D587822150D9D8C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +122,13 @@
 				8BFCA358216BE5D8009C3CFB /* Info.plist */,
 			);
 			path = MailyExampleTests;
+			sourceTree = "<group>";
+		};
+		D08ADAF48D587822150D9D8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,15 +418,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = MailyExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = buildy.tech.MailyExample;
+				PRODUCT_BUNDLE_IDENTIFIER = maily.tech.MailyExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -434,15 +439,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4NNFV669G;
 				INFOPLIST_FILE = MailyExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = buildy.tech.MailyExample;
+				PRODUCT_BUNDLE_IDENTIFIER = maily.tech.MailyExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

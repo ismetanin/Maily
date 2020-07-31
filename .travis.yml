@@ -1,9 +1,10 @@
 language: Swift
-osx_image: xcode10.2
+osx_image: xcode11
 xcode_project: Example/MailyExample.xcodeproj # path to your xcodeproj folder
 xcode_scheme: MailyExample
 
 script:
   - cd Example
   - set -o pipefail
-  - xcodebuild test -workspace MailyExample.xcworkspace -scheme MailyExample -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.0' | xcpretty -c 
+  - pod install
+  - xcodebuild test -workspace MailyExample.xcworkspace -scheme MailyExample -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' | xcpretty -c

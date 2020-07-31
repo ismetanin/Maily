@@ -1,0 +1,16 @@
+PODS:
+  - Maily (1.0.0)
+
+DEPENDENCIES:
+  - Maily (from `../Maily.podspec`)
+
+EXTERNAL SOURCES:
+  Maily:
+    :path: "../Maily.podspec"
+
+SPEC CHECKSUMS:
+  Maily: b153c0263e86e3b992013654d6c2194ab56c22b5
+
+PODFILE CHECKSUM: 78c2b63f4885657c3a986d501ae94312ea96fda5
+
+COCOAPODS: 1.9.0

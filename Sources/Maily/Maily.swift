@@ -6,7 +6,7 @@
 //  Copyright © 2018 Ivan Smetanin. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 open class Maily {
 
