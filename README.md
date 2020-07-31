@@ -18,7 +18,26 @@ Yahoo Mail         | `ymail`
 
 ## Installation
 
-Manually import files from `Source` folder to your project
+### CocoaPods
+
+
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Maily into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+pod 'Maily', '~> 1.0.0'
+```
+
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
+
+Once you have your Swift package set up, adding Maily as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/ismetanin/Maily.git", .upToNextMajor(from: "1.0.0"))
+]
+```
 
 ## Usage
 
